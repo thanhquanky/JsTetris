@@ -1,0 +1,102 @@
+﻿@boxWidth: 30px;
+@boardCols: 10;
+@boardRows: 15;
+@boxMargin: 2px;
+
+.headerClass {
+    margin-top: 45px;
+    margin-left: 120px;
+}
+
+#wrapper {
+    margin-top: 30px;
+    margin-left: 120px;
+    height: 90%-150px;
+}
+
+#scorePanel {
+    width: 30%;
+    float: left;
+}
+
+#gamePanel {
+    width: @boardCols * @boxWidth + @boardCols * 2 * @boxMargin;
+    height: @boardRows * @boxWidth + @boardRows * 2 * @boxMargin;
+    float: left;
+    background-color: #ff6a00;
+    padding: 2px;
+}
+
+.box {
+    width: @boxWidth;
+    height: @boxWidth;
+    float: left;
+    background-color: white;
+    margin: @boxMargin;
+}
+
+#copyright {
+    margin-bottom: 50px;
+    margin-left: 120px;
+    height: 100px;
+    clear: both;
+}
+
+#author {
+    color: orange;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.title {
+    color: blue;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 20pt;
+}
+
+.block0 {
+    background-color: black;
+}
+
+.block1 {
+    background-color: blue;
+}
+
+.block2 {
+    background-color: coral;
+}
+
+.block3 {
+    background-color: burlywood;
+}
+
+.block4 {
+    background-color: gold;
+}
+
+.block5 {
+    background-color: teal;
+}
+
+.block6 {
+    background-color: palevioletred;
+}
+
+.block7 {
+    background-color: green;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
