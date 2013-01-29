@@ -1,4 +1,7 @@
-﻿
+﻿/*
+Author: Thanh Ky Quan
+Project: JSTetris
+*/
 // Location 
 
 var Location = function (row, col) {
@@ -510,7 +513,8 @@ Tetris.prototype.updateScore = function (newScore) {
 
 // OMG, finally
 Tetris.prototype.gameOver = function() {
-    $("#gamePanel").html("<h1>Game Over!</h1>");
+    $("#gamePanel").hide();
+    $("#gameoverPanel").show();
     clearInterval(window.intervalCode);
 }
 

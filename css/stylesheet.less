@@ -3,9 +3,15 @@
 @boardRows: 15;
 @boxMargin: 2px;
 
+body {
+    background-image: url("../images/black_lozenge.png");
+    background-repeat: repeat;
+}
+
 .headerClass {
     margin-top: 45px;
     margin-left: 120px;
+    color: #F5F23D;
 }
 
 #wrapper {
@@ -17,14 +23,22 @@
 #scorePanel {
     width: 30%;
     float: left;
+    color: #98DFF5;
+}
+
+#gameoverPanel {
+    text-align: center;
+    display: none;
+    float: left;
+    color: #CADFE6;
 }
 
 #gamePanel {
     width: @boardCols * @boxWidth + @boardCols * 2 * @boxMargin;
     height: @boardRows * @boxWidth + @boardRows * 2 * @boxMargin;
     float: left;
-    background-color: #ff6a00;
     padding: 2px;
+    text-align: center;
 }
 
 .box {
@@ -48,7 +62,7 @@
     font-weight: bold;
 }
 .title {
-    color: blue;
+    color: #DBFA8C;
     font-size: 18pt;
     font-weight: bold;
 }
